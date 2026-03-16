@@ -970,9 +970,9 @@
 <!-- EmailJS SDK -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-  const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
-  const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
-  const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+  const EMAILJS_PUBLIC_KEY  = '_A0eUwL9RK7i0_Q_5';
+  const EMAILJS_SERVICE_ID  = 'service_1sna3ng';
+  const EMAILJS_TEMPLATE_ID = 'template_fzoohmj';
 
   emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
@@ -1000,13 +1000,13 @@
 
     try {
       await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-        from_name: name,
-        from_email: email,
-        phone:    phone || 'Not provided',
-        interest: interest || 'Not specified',
-        message:  message || 'No message provided',
-        to_email: 'nethashaf123@gmail.com'
-      });
+  name: name,
+  email: email,
+  phone: phone || 'Not provided',
+  title: interest || 'Not specified',
+  message: message || 'No message provided',
+  to_email: 'nethashaf123@gmail.com' // Adding this as a fallback
+});
       successEl.style.display = 'flex';
       errorEl.style.display   = 'none';
       this.reset();
