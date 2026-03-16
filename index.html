@@ -308,6 +308,7 @@
     .lightbox-img-wrap img { max-width:90vw;max-height:88vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.7);display:block; }
     .lightbox-close { position:absolute;top:-14px;right:-14px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;z-index:1; }
     .lightbox-close:hover { background:rgba(255,255,255,.25); }
+    .no-zoom:hover .pimgw img { transform: none; }
   </style>
 </head>
 <body>
@@ -366,15 +367,10 @@
   <div class="about-inner" style="margin-top:48px;">
     <div>
       <p class="about-pitch rv">
-        I'm Nethasha — a <strong>second-year CS student</strong> at IIT, Sri Lanka, studying toward a BSc (Hons) in Computer Science with the University of Westminster.
-        I started coding because I enjoy building things, and that curiosity has taken me from simple scripts to full-stack applications and AI-driven solutions.
-        I am currently focused on building scalable, user-centric software and seeking an internship where I can contribute to professional teams.
+        I'm Nethasha, a second-year CS student at IIT, Sri Lanka, pursuing a BSc (Hons) in Computer Science with the University of Westminster. Passionate about building, I've progressed from simple scripts to full-stack and AI solutions, focusing on scalable, user-centric software while seeking internship opportunities.
       </p>
       <p class="about-pitch rv rv1" style="margin-top:-16px;">
-        Outside of technical work, my perspective has been shaped by a long-standing involvement in sports and student leadership.
-        Having the opportunity to serve as a <strong>Badminton Captain</strong> and compete at a national level taught me the value of persistence and the importance of supporting a team under pressure.
-        Similarly, my roles within the <strong>Leo Club and AIESEC</strong> have been incredible learning experiences in coordination and responsibility.
-        Balancing these commitments alongside my degree has naturally strengthened my <strong>time management and discipline</strong>, helping me approach engineering challenges with a grounded, structured mindset.
+        Beyond coding, my experiences as Badminton Captain and in Leo Club/AIESEC have honed my persistence, teamwork, coordination, and time management skills, providing a structured approach to engineering challenges.
       </p>
       <div class="about-stats rv rv1">
         <div class="about-stat"><div class="about-stat-n">7</div><div class="about-stat-l">Projects Built</div></div>
@@ -520,8 +516,8 @@
   <div class="pgrid rv rv1">
 
     <!-- ROW 1 — CookMate + Artiverse stay bigger -->
-    <article class="pc pc-feat" data-project="cookmate" style="cursor:pointer !important;">
-      <div class="pimgw"><img src="screenshots/CookMate-1.png" alt="CookMate" width="1200" height="750" loading="lazy"></div>
+    <article class="pc pc-4 no-zoom" data-project="cookmate" style="cursor:pointer !important;">
+      <div class="pimgw"><img src="screenshots/CookMate-main.png" alt="CookMate" width="1200" height="750" loading="lazy" style="object-fit: contain;"></div>
       <div class="pbody">
         <div class="pmeta">
           <span class="pdate">Sep 2024 – Present</span>
@@ -537,8 +533,8 @@
       </div>
     </article>
 
-    <article class="pc pc-side" data-project="artiverse" style="cursor:pointer;">
-      <div class="pimgw"><img src="screenshots/artiverse-1.png" alt="Artiverse" width="1200" height="750" loading="lazy"></div>
+    <article class="pc pc-4" data-project="artiverse" style="cursor:pointer;">
+      <div class="pimgw"><img src="screenshots/Artiverse-main.jpg" alt="Artiverse" width="1200" height="750" loading="lazy"></div>
       <div class="pbody">
         <div class="pmeta">
           <span class="pdate">Sep 2024 – Present</span>
@@ -556,7 +552,7 @@
 
     <!-- ROW 2 — equal size cards -->
     <article class="pc pc-4" data-project="unisf" style="cursor:pointer;">
-      <div class="pimgw"><img src="screenshots/unisf-1.png" alt="UniSF" width="1200" height="750" loading="lazy"></div>
+      <div class="pimgw"><img src="screenshots/gender-equality.jpg" alt="UniSF" width="1200" height="750" loading="lazy"></div>
       <div class="pbody">
         <div class="pmeta">
           <span class="pdate">2025</span>
@@ -573,7 +569,7 @@
     </article>
 
     <article class="pc pc-4" data-project="traffic" style="cursor:pointer;">
-      <div class="pimgw"><img src="screenshots/traffic-1.png" alt="Vehicle Data Analysis" width="1200" height="750" loading="lazy"></div>
+      <div class="pimgw"><img src="screenshots/vehicle-main.jpg" alt="Vehicle Data Analysis" width="1200" height="750" loading="lazy"></div>
       <div class="pbody">
         <div class="pmeta"><span class="pdate">2025</span><span class="stlive">Complete</span></div>
         <h3 class="ptitle">Vehicle Data Analysis</h3>
@@ -584,7 +580,7 @@
     </article>
 
     <article class="pc pc-4" data-project="realestate" style="cursor:pointer;">
-      <div class="pimgw"><img src="screenshots/estate-agent-1.png" alt="Real Estate App" width="1200" height="750" loading="lazy"></div>
+      <div class="pimgw"><img src="screenshots/estate-main.jpg" alt="Real Estate App" width="1200" height="750" loading="lazy"></div>
       <div class="pbody">
         <div class="pmeta"><span class="pdate">2025</span><span class="stlive">Live</span></div>
         <h3 class="ptitle">Real Estate Agent Web App</h3>
@@ -598,8 +594,8 @@
     </article>
 
     <!-- ROW 3 — equal size cards -->
-    <article class="pc pc-6" data-project="scam" style="cursor:pointer;">
-      <div class="picon">🛡️</div>
+    <article class="pc pc-4" data-project="scam" style="cursor:pointer;">
+      <div class="pimgw"><img src="screenshots/scam-main.jpg" alt="Scam Detection Web App" width="1200" height="750" loading="lazy"></div>
       <div class="pbody">
         <div class="pmeta"><span class="pdate">2024</span><span class="stlive">Complete</span></div>
         <h3 class="ptitle">Scam Detection Web App</h3>
@@ -609,8 +605,8 @@
       </div>
     </article>
 
-    <article class="pc pc-6" data-project="theatre" style="cursor:pointer;">
-      <div class="picon">🎭</div>
+    <article class="pc pc-4" data-project="theatre" style="cursor:pointer;">
+      <div class="pimgw"><img src="screenshots/theatre-main.jpg" alt="JavaFX Theatre Booking App" width="1200" height="750" loading="lazy"></div>
       <div class="pbody">
         <div class="pmeta"><span class="pdate">2024</span><span class="stlive">Complete</span></div>
         <h3 class="ptitle">JavaFX Theatre Booking App</h3>
@@ -664,25 +660,6 @@
       <div class="ltitle">IEEE Student Branch Member</div>
       <div class="lsub">IIT · 2024</div>
       <div class="ldesc">Participated in SHE Spark and Sherlock tech events, engaging with the engineering and technology community and expanding practical technical knowledge.</div>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates" class="sec">
-  <div class="cert-divider rv">
-    <p class="eyebrow">Credentials</p>
-    <h2 class="sec-title" style="margin-bottom:14px;">Certificates &amp;<br>Courses</h2>
-    <p class="cert-intro">Add your certificate images below — replace each placeholder with an &lt;img&gt; tag pointing to your image file.</p>
-    <div class="cert-grid">
-      <div class="cert-img-box rv"><i class="fas fa-image cert-ph-ico"></i></div>
-      <div class="cert-img-box rv rv1"><i class="fas fa-image cert-ph-ico"></i></div>
-      <div class="cert-img-box rv rv2"><i class="fas fa-image cert-ph-ico"></i></div>
-      <div class="cert-img-box rv rv3"><i class="fas fa-image cert-ph-ico"></i></div>
-      <div class="cert-img-box rv"><i class="fas fa-image cert-ph-ico"></i></div>
-      <div class="cert-img-box rv rv1"><i class="fas fa-image cert-ph-ico"></i></div>
-      <div class="cert-img-box rv rv2"><i class="fas fa-image cert-ph-ico"></i></div>
-      <div class="cert-img-box rv rv3"><i class="fas fa-image cert-ph-ico"></i></div>
     </div>
   </div>
 </section>
