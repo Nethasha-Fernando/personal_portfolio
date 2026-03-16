@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Nethasha Fernando</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <p class="logo">Nethasha <span>Fernando</span></p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <div class="contact-info">
+      <p class="eyebrow fade-up">Get In Touch</p>
+      <h1 class="fade-up delay-1">Let's work<br>together.</h1>
+      <p class="fade-up delay-2">
+        I'm actively looking for software engineering internship opportunities.
+        Whether you have a project, question, or just want to connect — my inbox is always open.
+      </p>
+      <div class="contact-details fade-up delay-3">
+        <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><span>nethashaf123@gmail.com</span></div>
+        <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><span>+94 77 567 4554</span></div>
+        <div class="contact-item"><div class="contact-icon"><i class="fab fa-linkedin-in"></i></div><span>linkedin.com/in/nethasha-fernando</span></div>
+        <div class="contact-item"><div class="contact-icon"><i class="fab fa-github"></i></div><span>github.com/Nethasha-Fernando</span></div>
+        <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><span>Ragama, Sri Lanka</span></div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap fade-up delay-2">
+      <h2>Send a message</h2>
+      <form method="post" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your name" required></div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="your@email.com" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="+94 ..."></div>
+          <div class="field">
+            <label for="service">Interest</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select one</option>
+              <option>Internship Offer</option>
+              <option>Freelance Project</option>
+              <option>Collaboration</option>
+              <option>Just Saying Hi</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="details">Message</label><textarea id="details" name="details" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea></div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
